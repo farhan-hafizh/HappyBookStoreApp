@@ -22,7 +22,7 @@
           </div>
       </div>
     <footer class="title page-footer">
-        <div class="footer-copyright text-center py-3">&copy; Happy Book Store 2021</div>
+        <div class="footer-copyright text-center py-3">&copy; Happy Book Store 2021 - Farhan Novyan Hafizh</div>
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>

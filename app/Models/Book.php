@@ -13,6 +13,13 @@ class Book extends Model
         return $this->belongsTo(Category::class,'category_id');
     }
     public function detail(){
-        return $this->belongsTo(Detail::class);
+        return $this->hasOne(Detail::class,'book_id');
+    }
+    //local scope filter
+    public function scopeFilter($query, array $filters){
+        //run this if filters setted
+        $query->when($filters['search'] ?? false, function($query,$search){
+            return $query->where('title','like','%'.$search  . '%');
+        });
     }
 }

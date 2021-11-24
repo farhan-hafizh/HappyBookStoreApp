@@ -1,10 +1,11 @@
 <?php
 
-use App\Http\Controllers\CategoryController;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\HomeController;
-use App\Http\Controllers\ContactController;
 use App\Http\Controllers\BookController;
+use App\Http\Controllers\HomeController;
+use App\Http\Controllers\SearchController;
+use App\Http\Controllers\ContactController;
+use App\Http\Controllers\CategoryController;
 
 /*
 |--------------------------------------------------------------------------
@@ -21,6 +22,7 @@ Route::get('/', [HomeController::class,'index']);
 
 Route::get('/contact', [ContactController::class, 'index']);
 
-Route::get('/category/{id}', [CategoryController::class, 'show']);
+Route::get('/category/{category:category}', [CategoryController::class, 'show']);
 
 Route::get('/book/{id}', [BookController::class, 'show']);
+

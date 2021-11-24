@@ -8,11 +8,12 @@ use App\Models\Detail;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
-{
-    public function index(){
+{   
+    public function index(){   
+        
         return view('home',[
             "title" => "Home",
-            "books" => Detail::all(),
+            "books" => Book::latest()->filter(request(['search']))->paginate(10),
             "categories" => Category::all()
         ]);
     }

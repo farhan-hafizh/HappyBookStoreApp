@@ -14,7 +14,7 @@ class DetailFactory extends Factory
     public function definition()
     {
         return [
-            'book_id' => $this->faker->unique()->numberBetween(1,10),
+            'book_id' => $this->faker->unique()->numberBetween(1,150),
             'author' => $this->faker->name(),
             'publisher' => $this->faker->sentence(2),
             'year' => $this->faker->date('Y'),
