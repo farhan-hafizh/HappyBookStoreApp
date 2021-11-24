@@ -1,7 +1,7 @@
 @extends('template.main')
 
 @section('content-main')
-    <h2>Book List</h2>
+    <h2>Book Detail</h2>
         <div>
             <p>Title: {{ $books->book->title }}</p>
             <p>Author: {{ $books->author }}</p>
